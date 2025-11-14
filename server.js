@@ -12,7 +12,7 @@ const server = http.createServer(app);
 // ถ้า Frontend รันอยู่บน http://localhost:3000 ให้เปลี่ยน origin เป็นค่านี้
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000", // **สำคัญ: เปลี่ยนเป็น URL ของ Frontend คุณ**
+        origin: "https://wavelength-thai-client.vercel.app/", // **สำคัญ: เปลี่ยนเป็น URL ของ Frontend คุณ**
         methods: ["GET", "POST"]
     }
 });
