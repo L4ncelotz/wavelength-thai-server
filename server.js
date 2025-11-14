@@ -259,7 +259,7 @@ function startNewRound(roomId) {
 
     console.log(`Room ${roomId}: New round. Spymaster: ${nextSpymaster.username}. Card: ${room.currentCard.left} - ${room.currentCard.right}. Target: ${room.targetValue}`);
 
-s    // แจ้งทุกคนว่า Spymaster คือใครและมีการ์ดอะไร
+    // แจ้งทุกคนว่า Spymaster คือใครและมีการ์ดอะไร
     io.to(roomId).emit('newRound', {
         spymasterId: room.currentSpymaster,
         card: room.currentCard,
